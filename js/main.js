@@ -15,12 +15,13 @@ fetch(endpoint)
             const { title, date, url } = element
             const markup = `<div class="col-12 col-md-6 col-lg-4 mb-4">
                     <div class="card ">
-                        <img src="${url}" class="card-img-top" alt="...">
+                        <img class="pin " src="./img/pin.svg" alt="">
+                        <img src="${url} " class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">${title}</h5>
-                            <p class="card-text">
-                            ${date}   
+                             <p class="card-text mono_font">
+                                ${date}   
                             </p>
+                            <h4 class="card-title edu_font">${title}</h4>
                         </div>
                     </div>
                 </div>`
