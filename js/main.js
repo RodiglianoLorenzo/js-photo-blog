@@ -2,6 +2,7 @@ const endpoint = 'https://lanciweb.github.io/demo/api/pictures/'
 
 const rowEl = document.querySelector('.row')
 
+
 console.log(endpoint);
 
 
