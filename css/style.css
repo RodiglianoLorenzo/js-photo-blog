@@ -55,10 +55,12 @@ font-family: "Sometype Mono", monospace;
     background-color: rgb(0, 0, 0, 0.5);
     position: fixed;
     top: 0%;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.overlay.hidden{
+    display: none;
 }
 .img_overlay{
     width: 35%;

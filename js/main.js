@@ -1,6 +1,9 @@
 const endpoint = 'https://lanciweb.github.io/demo/api/pictures/'
 
 const rowEl = document.querySelector('.row')
+const buttonEl = document.querySelector('.close-btn')
+const imgEl = document.querySelector('.img_overlay')
+const overlayEl = document.querySelector('.overlay')
 
 
 console.log(endpoint);
@@ -30,4 +33,15 @@ fetch(endpoint)
             console.log(markup);
             rowEl.insertAdjacentHTML('beforeend', markup)
         });
+        const images = document.querySelectorAll('.card-img-top')
+
+        images.forEach(img => {
+            img.addEventListener('click', () => {
+                imgEl.src = img.src
+                overlayEl.classList.remove('hidden')
+            })
+        })
     })
+buttonEl.addEventListener('click', () => {
+    overlayEl.classList.add('hidden')
+})
