@@ -37,7 +37,7 @@ fetch(endpoint)
 
         images.forEach(img => {
             img.addEventListener('click', () => {
-                imgEl.src = img.src
+                imgEl.src = img.src;
                 overlayEl.classList.remove('hidden')
             })
         })
@@ -45,3 +45,4 @@ fetch(endpoint)
 buttonEl.addEventListener('click', () => {
     overlayEl.classList.add('hidden')
 })
+
